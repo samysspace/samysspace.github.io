@@ -1,2 +1,5 @@
 # samysspace.github.io
-This is my website.
+This is my personal website. 
+
+Typewriter effect credit:
+https://css-tricks.com/snippets/css/typewriter-effect/
