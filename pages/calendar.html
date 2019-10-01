@@ -1,28 +1,17 @@
-<html>
-    <head>
-        <title>My Calendar</title>
-        <style type="text/css">
-            .iframe-container {
-  overflow: hidden;
-  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
-  padding-top: 56.25%;
-  position: relative;
-}
- 
-.iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
-}
-        </style>
-    </head>
-    <body>
-        <div class="iframe-container">
-  <iframe src="https://calendar.google.com/calendar/embed?src=scherfaoui%40berkeley.edu&ctz=America%2FLos_Angeles&mode=WEEK" allowfullscreen></iframe>
-        </div>
-    </body>
-</html>
+<iframe
+  src="https://calendar.google.com/calendar/embed?src=scherfaoui%40berkeley.edu&ctz=America%2FLos_Angeles&mode=WEEK"
+  style="
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 999999;
+    height: 100%;
+  ">
+</iframe>
 
