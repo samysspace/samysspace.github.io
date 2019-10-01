@@ -2,20 +2,26 @@
     <head>
         <title>My Calendar</title>
         <style type="text/css">
-            body, html
-            {
-                margin: 0; padding: 0; height: 100%; overflow: hidden;
-            }
-
-            #content
-            {
-                position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
-            }
+            .iframe-container {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
         </style>
     </head>
     <body>
-        <div id="content">
-          <iframe src="https://calendar.google.com/calendar/embed?src=scherfaoui%40berkeley.edu&ctz=America%2FLos_Angeles&mode=WEEK"></iframe>
+        <div class="iframe-container">
+  <iframe src="https://calendar.google.com/calendar/embed?src=scherfaoui%40berkeley.edu&ctz=America%2FLos_Angeles&mode=WEEK" allowfullscreen></iframe>
         </div>
     </body>
 </html>
