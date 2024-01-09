@@ -135,7 +135,7 @@ h3 {
     font-size: 148%;
 }
 
-p {
+p, li {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
     font-size: 100%;
